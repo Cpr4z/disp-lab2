@@ -1,14 +1,14 @@
 from copy import deepcopy
 from uuid import UUID
 
-from ..cruds.mocks.ticket import TicketMockCRUD
-from ..cruds.mocks.data import TicketDataMock
-from ..services.ticket import TicketService
-from ..schemas.ticket import TicketFilter, TicketCreate, TicketUpdate
-from ..enums.sort import SortTicket
-from ..enums.status import TicketStatus
-from ..models.ticket import TicketModel
-from ..exceptions.http_exceptions import NotFoundException, ConflictException
+from cruds.mocks.ticket import TicketMockCRUD
+from cruds.mocks.data import TicketDataMock
+from services.ticket import TicketService
+from schemas.ticket import TicketFilter, TicketCreate, TicketUpdate
+from enums.sort import SortTicket
+from enums.status import TicketStatus
+from models.ticket import TicketModel
+from exceptions.http_exceptions import NotFoundException, ConflictException
 
 ticketService = TicketService(
     ticketCRUD=TicketMockCRUD,
