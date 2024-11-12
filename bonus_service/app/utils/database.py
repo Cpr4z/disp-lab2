@@ -1,7 +1,7 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, declarative_base
 
-from settings import get_db_url
+from bonus_service.app.utils.settings import get_db_url
 
 
 engine = create_engine(
