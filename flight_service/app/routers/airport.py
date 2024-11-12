@@ -3,12 +3,12 @@ from fastapi.responses import Response
 from sqlalchemy.orm import Session
 from typing import Annotated
 
-from ..schemas.airport import AirportCreate, Airport
-from ..services.airport import AirportService
-from ..enums.responses import RespAirportEnum
-from ..utils.database import get_db
-from ..cruds.interfaces.airport import IAirportCRUD
-from ..cruds.airport import AirportCRUD
+from flight_service.app.schemas.airport import AirportCreate, Airport
+from flight_service.app.services.airport import AirportService
+from flight_service.app.enums.responses import RespAirportEnum
+from flight_service.app.utils.database import get_db
+from flight_service.app.cruds.interfaces.airport import IAirportCRUD
+from flight_service.app.cruds.airport import AirportCRUD
 
 
 # from cruds.mocks.airport import AirportMockCRUD

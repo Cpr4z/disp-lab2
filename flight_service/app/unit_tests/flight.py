@@ -1,12 +1,12 @@
 from copy import deepcopy
 from datetime import datetime as dt
 
-from ..cruds.mocks.flight import FlightMockCRUD
-from ..cruds.mocks.data import FlightDataMock
-from ..services.flight import FlightService
-from ..schemas.flight import FlightFilter, FlightCreate
-from ..models.flight import FlightModel
-from ..exceptions.http_exceptions import NotFoundException, ConflictException
+from flight_service.app.cruds.mocks.flight import FlightMockCRUD
+from flight_service.app.cruds.mocks.data import FlightDataMock
+from flight_service.app.services.flight import FlightService
+from flight_service.app.schemas.flight import FlightFilter, FlightCreate
+from flight_service.app.models.flight import FlightModel
+from flight_service.app.exceptions.http_exceptions import NotFoundException, ConflictException
 
 flightService = FlightService(
     flightCRUD=FlightMockCRUD,

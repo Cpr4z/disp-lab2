@@ -1,9 +1,9 @@
 from sqlalchemy.orm import Session
 
-from ..models.airport import AirportModel
-from ..schemas.airport import AirportCreate
-from ..exceptions.http_exceptions import NotFoundException, ConflictException
-from ..cruds.interfaces.airport import IAirportCRUD
+from flight_service.app.models.airport import AirportModel
+from flight_service.app.schemas.airport import AirportCreate
+from flight_service.app.exceptions.http_exceptions import NotFoundException, ConflictException
+from flight_service.app.cruds.interfaces.airport import IAirportCRUD
 
 
 class AirportService():

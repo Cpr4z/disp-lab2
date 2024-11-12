@@ -1,4 +1,4 @@
-from ..models.airport import AirportModel
+from flight_service.app.models.airport import AirportModel
 from interfaces.airport import IAirportCRUD
 
 

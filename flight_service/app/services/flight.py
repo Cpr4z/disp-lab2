@@ -1,9 +1,9 @@
 from sqlalchemy.orm import Session
 
-from ..models.flight import FlightModel
-from ..schemas.flight import FlightFilter, FlightCreate
-from ..exceptions.http_exceptions import NotFoundException, ConflictException
-from ..cruds.interfaces.flight import IFlightCRUD
+from flight_service.app.models.flight import FlightModel
+from flight_service.app.schemas.flight import FlightFilter, FlightCreate
+from flight_service.app.exceptions.http_exceptions import NotFoundException, ConflictException
+from flight_service.app.cruds.interfaces.flight import IFlightCRUD
 
 
 class FlightService():

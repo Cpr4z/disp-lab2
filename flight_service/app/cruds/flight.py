@@ -1,6 +1,6 @@
-from ..models.flight import FlightModel
+from flight_service.app.models.flight import FlightModel
 from interfaces.flight import IFlightCRUD
-from ..schemas.flight import FlightFilter
+from flight_service.app.schemas.flight import FlightFilter
 
 
 class FlightCRUD(IFlightCRUD):
