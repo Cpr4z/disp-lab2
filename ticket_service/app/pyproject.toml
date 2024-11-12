@@ -1,5 +1,5 @@
 [tool.pytest.ini_options]
 pythonpath = [
-    ".", "app",
+    ".", "app", "ticket_service/app"
 ]
 asyncio_mode="auto"
