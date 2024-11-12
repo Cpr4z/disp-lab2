@@ -68,8 +68,8 @@ services:
       context: "."
       dockerfile: ./docker/bonus.Dockerfile
     volumes:
-      - ./config.yaml:/bonus/config.yaml
-      - ./requirements.txt:/bonus/requirements.txt
+      - ../config.yaml:/bonus/config.yaml
+      - ../requirements.txt:/bonus/requirements.txt
     ports:
       - "8050:8050"
     networks:
