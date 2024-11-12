@@ -3,9 +3,9 @@ from fastapi import FastAPI, HTTPException
 from fastapi.exceptions import RequestValidationError
 from fastapi.openapi.utils import get_openapi
 
-from routers.api import router as api_router
-from utils.settings import get_settings
-from exceptions.handlers import (
+from gateway_service.app.routers.api import router as api_router
+from gateway_service.app.utils.settings import get_settings
+from gateway_service.app.exceptions.handlers import (
     http_exception_handler,
     request_validation_exception_handler,
 )

@@ -3,10 +3,10 @@ from fastapi import FastAPI, HTTPException
 from fastapi.exceptions import RequestValidationError
 from fastapi.openapi.utils import get_openapi
 
-from routers.api import router as api_router
-from utils.database import create_tables
-from utils.settings import get_settings
-from exceptions.handlers import (
+from flight_service.app.routers.api import router as api_router
+from flight_service.app.utils.database import create_tables
+from flight_service.app.utils.settings import get_settings
+from flight_service.app.exceptions.handlers import (
     http_exception_handler,
     request_validation_exception_handler,
 )
