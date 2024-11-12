@@ -60,11 +60,25 @@ jobs:
           script: |
             cd /home/${{ secrets.SSH_USERNAME }}/flight-booking-system
             echo ${{ secrets.SSH_PASSWORD }} | sudo -S docker-compose down
-            echo ${{ secrets.SSH_PASSWORD }} | sudo -S docker rmi gateway_service
-            echo ${{ secrets.SSH_PASSWORD }} | sudo -S docker rmi bonus_service
-            echo ${{ secrets.SSH_PASSWORD }} | sudo -S docker rmi flight_service
-            echo ${{ secrets.SSH_PASSWORD }} | sudo -S docker rmi ticket_service
-            echo ${{ secrets.SSH_PASSWORD }} | sudo -S docker rmi gateway_service
+#            echo ${{ secrets.SSH_PASSWORD }} | sudo -S docker rmi gateway_service
+#            echo ${{ secrets.SSH_PASSWORD }} | sudo -S docker rmi bonus_service
+#            echo ${{ secrets.SSH_PASSWORD }} | sudo -S docker rmi flight_service
+#            echo ${{ secrets.SSH_PASSWORD }} | sudo -S docker rmi ticket_service
+            if docker image inspect gateway_service:latest > /dev/null 2>&1; then
+            echo ${{ secrets.SSH_PASSWORD }} | sudo -S docker rmi gateway_service:latest
+            fi
+
+            if docker image inspect bonus_service:latest > /dev/null 2>&1; then
+            echo ${{ secrets.SSH_PASSWORD }} | sudo -S docker rmi bonus_service:latest
+            fi
+
+            if docker image inspect flight_service:latest > /dev/null 2>&1; then
+            echo ${{ secrets.SSH_PASSWORD }} | sudo -S docker rmi flight_service:latest
+            fi
+
+            if docker image inspect ticket_service:latest > /dev/null 2>&1; then
+            echo ${{ secrets.SSH_PASSWORD }} | sudo -S docker rmi ticket_service:latest
+            fi
             echo ${{ secrets.SSH_PASSWORD }} | sudo -S docker-compose up -d
 
   autograding:
