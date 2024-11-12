@@ -1,10 +1,10 @@
 from uuid import UUID, uuid4
 
-from ticket_service.app.models.ticket import TicketModel
-from ticket_service.app.schemas.ticket import TicketFilter, TicketUpdate
-from ticket_service.app.enums.sort import SortTicket
-from ticket_service.app.cruds.interfaces.ticket import ITicketCRUD
-from ticket_service.app.cruds.mocks.data import TicketDataMock
+from models.ticket import TicketModel
+from schemas.ticket import TicketFilter, TicketUpdate
+from enums.sort import SortTicket
+from cruds.interfaces.ticket import ITicketCRUD
+from cruds.mocks.data import TicketDataMock
 
 
 class TicketMockCRUD(ITicketCRUD, TicketDataMock):
