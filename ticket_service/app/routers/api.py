@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 
-from ticket_service.app.routers import ticket, manage
+from routers import ticket, manage
 
 
 router = APIRouter()

@@ -2,9 +2,9 @@ from sqlalchemy.orm import Session
 from abc import ABC, abstractmethod
 from uuid import UUID
 
-from ticket_service.app.models.ticket import TicketModel
-from ticket_service.app.schemas.ticket import TicketFilter, TicketUpdate
-from ticket_service.app.enums.sort import SortTicket
+from models.ticket import TicketModel
+from schemas.ticket import TicketFilter, TicketUpdate
+from enums.sort import SortTicket
 
 
 class ITicketCRUD(ABC):

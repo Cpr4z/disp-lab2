@@ -1,9 +1,9 @@
 from uuid import UUID
 
-from ticket_service.app.models.ticket import TicketModel
-from ticket_service.app.schemas.ticket import TicketFilter, TicketUpdate
-from ticket_service.app.cruds.interfaces.ticket import ITicketCRUD
-from ticket_service.app.enums.sort import SortTicket
+from app.models.ticket import TicketModel
+from app.schemas.ticket import TicketFilter, TicketUpdate
+from app.cruds.interfaces.ticket import ITicketCRUD
+from app.enums.sort import SortTicket
 
 
 class TicketCRUD(ITicketCRUD):

@@ -1,7 +1,7 @@
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.dialects.postgresql import UUID
 from uuid import uuid4
-from ticket_service.app.utils.database import Base
+from utils.database import Base
 
 
 class TicketModel(Base):

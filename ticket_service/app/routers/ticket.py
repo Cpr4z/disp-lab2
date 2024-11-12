@@ -4,14 +4,14 @@ from sqlalchemy.orm import Session
 from typing import Annotated
 from uuid import UUID
 
-from ticket_service.app.schemas.ticket import TicketFilter, TicketCreate, TicketUpdate, Ticket
-from ticket_service.app.services.ticket import TicketService
-from ticket_service.app.enums.responses import RespEnum
-from ticket_service.app.enums.sort import SortTicket
-from ticket_service.app.enums.status import TicketStatus
-from ticket_service.app.utils.database import get_db
-from ticket_service.app.cruds.interfaces.ticket import ITicketCRUD
-from ticket_service.app.cruds.ticket import TicketCRUD
+from schemas.ticket import TicketFilter, TicketCreate, TicketUpdate, Ticket
+from services.ticket import TicketService
+from enums.responses import RespEnum
+from enums.sort import SortTicket
+from enums.status import TicketStatus
+from utils.database import get_db
+from cruds.interfaces.ticket import ITicketCRUD
+from cruds.ticket import TicketCRUD
 
 
 # from cruds.mocks.ticket import TicketMockCRUD

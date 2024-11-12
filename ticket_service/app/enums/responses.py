@@ -1,6 +1,6 @@
 from enum import Enum
 
-from ticket_service.app.schemas.response import ErrorResponse, ValidationErrorResponse
+from schemas.response import ErrorResponse, ValidationErrorResponse
 
 
 class RespEnum(Enum):

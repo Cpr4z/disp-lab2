@@ -1,11 +1,11 @@
 from sqlalchemy.orm import Session
 from uuid import UUID
 
-from ticket_service.app.models.ticket import TicketModel
-from ticket_service.app.schemas.ticket import TicketFilter, TicketCreate, TicketUpdate
-from ticket_service.app.exceptions.http_exceptions import NotFoundException, ConflictException
-from ticket_service.app.cruds.interfaces.ticket import ITicketCRUD
-from ticket_service.app.enums.sort import SortTicket
+from models.ticket import TicketModel
+from schemas.ticket import TicketFilter, TicketCreate, TicketUpdate
+from exceptions.http_exceptions import NotFoundException, ConflictException
+from cruds.interfaces.ticket import ITicketCRUD
+from enums.sort import SortTicket
 
 
 class TicketService():

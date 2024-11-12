@@ -1,7 +1,7 @@
 from pydantic import BaseModel, constr, conint
 from uuid import UUID
 
-from ticket_service.app.enums.status import TicketStatus
+from enums.status import TicketStatus
 
 
 class TicketBase(BaseModel):
