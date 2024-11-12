@@ -1,7 +1,7 @@
-from models.flight import FlightModel
-from schemas.flight import FlightFilter
-from cruds.interfaces.flight import IFlightCRUD
-from cruds.mocks.data import FlightDataMock
+from flight_service.app.models.flight import FlightModel
+from flight_service.app.schemas.flight import FlightFilter
+from flight_service.app.cruds.interfaces.flight import IFlightCRUD
+from flight_service.app.cruds.mocks.data import FlightDataMock
 
 
 class FlightMockCRUD(IFlightCRUD, FlightDataMock):
