@@ -4,7 +4,7 @@ WORKDIR /bonus
 
 COPY ./bonus_service /bonus
 
-RUN pip3.10 install -r requirements.txt
+RUN pip3.10 install -r /bonus/requirements.txt
 
 EXPOSE 8050
 
