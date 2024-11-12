@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 
-from routers import flight, airport, manage
+from ..routers import flight, airport, manage
 
 
 router = APIRouter()

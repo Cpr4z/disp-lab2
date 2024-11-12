@@ -4,12 +4,12 @@ from sqlalchemy.orm import Session
 from typing import Annotated
 from datetime import datetime as dt
 
-from schemas.flight import FlightFilter, FlightCreate, Flight
-from services.flight import FlightService
-from enums.responses import RespFlightEnum
-from utils.database import get_db
-from cruds.interfaces.flight import IFlightCRUD
-from cruds.flight import FlightCRUD
+from ..schemas.flight import FlightFilter, FlightCreate, Flight
+from ..services.flight import FlightService
+from ..enums.responses import RespFlightEnum
+from ..utils.database import get_db
+from ..cruds.interfaces.flight import IFlightCRUD
+from ..cruds.flight import FlightCRUD
 
 
 # from cruds.mocks.flight import FlightMockCRUD
