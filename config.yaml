@@ -20,22 +20,22 @@ databases:
 
 services:
   bonus:
-    host: "0.0.0.0"
+    host: "130.193.59.33"
     port: 8050
     log_level: "info"
     reload: True
   flight:
-    host: "0.0.0.0"
+    host: "130.193.59.33"
     port: 8060
     log_level: "info"
     reload: True
   ticket:
-    host: "0.0.0.0"
+    host: "130.193.59.33"
     port: 8070
     log_level: "info"
     reload: True
   gateway:
-    host: "0.0.0.0"
+    host: "130.193.59.33"
     port: 8080
     log_level: "info"
     reload: True
