@@ -1,7 +1,7 @@
 from sqlalchemy.orm import Session
 from abc import ABC, abstractmethod
 
-from flight_service.app.models.airport import AirportModel
+from models.airport import AirportModel
 
 
 class IAirportCRUD(ABC):

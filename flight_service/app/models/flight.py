@@ -1,5 +1,5 @@
 from sqlalchemy import Column, Integer, String, DateTime, ForeignKey
-from flight_service.app.utils.database import Base
+from utils.database import Base
 from airport import AirportModel
 
 
