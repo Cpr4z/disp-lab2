@@ -3,7 +3,7 @@ from sqlalchemy.dialects.postgresql import UUID
 from datetime import datetime as dt
 
 from utils.database import Base
-from privilege import PrivilegeModel
+from models.privilege import PrivilegeModel
 
 
 class PrivilegeHistoryModel(Base):
