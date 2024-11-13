@@ -1,7 +1,6 @@
 from pydantic import BaseModel, constr, conint
 from datetime import datetime as dt
 
-
 def convert_datetime(datetime: dt) -> str:
     return datetime.strftime('%Y-%m-%d %H:%M')
 

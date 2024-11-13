@@ -1,9 +1,9 @@
 import requests
 from requests import Response
 
-from gateway_service.app.utils.settings import get_settings
-from gateway_service.app.cruds.interfaces.flight import IFlightCRUD
-from gateway_service.app.cruds.base import BaseCRUD
+from utils.settings import get_settings
+from cruds.interfaces.flight import IFlightCRUD
+from cruds.base import BaseCRUD
 
 
 class FlightCRUD(IFlightCRUD, BaseCRUD):

@@ -3,18 +3,18 @@ from fastapi.responses import Response
 from typing import Annotated
 from uuid import UUID
 
-from gateway_service.app.schemas.flight import PaginationResponse
-from gateway_service.app.schemas.ticket import TicketResponse, TicketPurchaseResponse, TicketPurchaseRequest
-from gateway_service.app.schemas.bonus import PrivilegeInfoResponse
-from gateway_service.app.schemas.user import UserInfoResponse
-from gateway_service.app.services.gateway import GatewayService
-from gateway_service.app.enums.responses import RespEnum
-from gateway_service.app.cruds.interfaces.flight import IFlightCRUD
-from gateway_service.app.cruds.interfaces.ticket import ITicketCRUD
-from gateway_service.app.cruds.interfaces.bonus import IBonusCRUD
-from gateway_service.app.cruds.flight import FlightCRUD
-from gateway_service.app.cruds.ticket import TicketCRUD
-from gateway_service.app.cruds.bonus import BonusCRUD
+from schemas.flight import PaginationResponse
+from schemas.ticket import TicketResponse, TicketPurchaseResponse, TicketPurchaseRequest
+from schemas.bonus import PrivilegeInfoResponse
+from schemas.user import UserInfoResponse
+from services.gateway import GatewayService
+from enums.responses import RespEnum
+from cruds.interfaces.flight import IFlightCRUD
+from cruds.interfaces.ticket import ITicketCRUD
+from cruds.interfaces.bonus import IBonusCRUD
+from cruds.flight import FlightCRUD
+from cruds.ticket import TicketCRUD
+from cruds.bonus import BonusCRUD
 
 
 def get_flight_crud() -> type[IFlightCRUD]:

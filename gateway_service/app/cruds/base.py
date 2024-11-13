@@ -1,6 +1,6 @@
 import inspect
 
-from gateway_service.app.exceptions.http_exceptions import InvalidRequestException
+from exceptions.http_exceptions import InvalidRequestException
 
 
 class BaseCRUD():

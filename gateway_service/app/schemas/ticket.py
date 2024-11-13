@@ -2,8 +2,8 @@ from pydantic import BaseModel, constr, conint
 from datetime import datetime as dt
 from uuid import UUID
 
-from gateway_service.app.enums.status import TicketStatus
-from gateway_service.app.schemas.bonus import PrivilegeShortInfo
+from enums.status import TicketStatus
+from schemas.bonus import PrivilegeShortInfo
 
 
 def convert_datetime(datetime: dt) -> str:

@@ -4,10 +4,10 @@ from requests import Response
 from fastapi import status
 from uuid import UUID
 
-from gateway_service.app.utils.settings import get_settings
-from gateway_service.app.schemas.ticket import TicketCreate, TicketUpdate
-from gateway_service.app.cruds.interfaces.ticket import ITicketCRUD
-from gateway_service.app.cruds.base import BaseCRUD
+from utils.settings import get_settings
+from schemas.ticket import TicketCreate, TicketUpdate
+from cruds.interfaces.ticket import ITicketCRUD
+from cruds.base import BaseCRUD
 
 
 class TicketCRUD(ITicketCRUD, BaseCRUD):

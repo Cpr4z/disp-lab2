@@ -2,7 +2,7 @@ from pydantic import BaseModel, conint, constr
 from datetime import datetime as dt
 from uuid import UUID
 
-from gateway_service.app.enums.status import PrivilegeHistoryStatus, PrivilegeStatus
+from enums.status import PrivilegeHistoryStatus, PrivilegeStatus
 
 
 def convert_datetime(datetime: dt) -> str:

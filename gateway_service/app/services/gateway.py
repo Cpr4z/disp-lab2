@@ -1,12 +1,12 @@
 from uuid import UUID
 
-from gateway_service.app.cruds.interfaces.flight import IFlightCRUD
-from gateway_service.app.cruds.interfaces.ticket import ITicketCRUD
-from gateway_service.app.cruds.interfaces.bonus import IBonusCRUD
-from gateway_service.app.exceptions.http_exceptions import NotFoundException
-from gateway_service.app.enums.status import TicketStatus, PrivilegeHistoryStatus, PrivilegeStatus
-from gateway_service.app.schemas.user import UserInfoResponse
-from gateway_service.app.schemas.flight import (
+from cruds.interfaces.flight import IFlightCRUD
+from cruds.interfaces.ticket import ITicketCRUD
+from cruds.interfaces.bonus import IBonusCRUD
+from exceptions.http_exceptions import NotFoundException
+from enums.status import TicketStatus, PrivilegeHistoryStatus, PrivilegeStatus
+from schemas.user import UserInfoResponse
+from schemas.flight import (
     PaginationResponse,
     FlightResponse
 )

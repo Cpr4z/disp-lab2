@@ -2,10 +2,10 @@ import json
 import requests
 from requests import Response
 
-from gateway_service.app.utils.settings import get_settings
-from gateway_service.app.cruds.interfaces.bonus import IBonusCRUD
-from gateway_service.app.cruds.base import BaseCRUD
-from gateway_service.app.schemas.bonus import (
+from utils.settings import get_settings
+from cruds.interfaces.bonus import IBonusCRUD
+from cruds.base import BaseCRUD
+from schemas.bonus import (
     PrivilegeHistoryCreate,
     PrivilegeHistoryFilter,
     PrivilegeCreate,
