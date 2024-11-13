@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 
-from gateway_service.app.schemas.ticket import TicketCreate, TicketUpdate
+from schemas.ticket import TicketCreate, TicketUpdate
 
 
 class ITicketCRUD(ABC):

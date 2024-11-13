@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 
-from gateway_service.app.schemas.bonus import (
+from schemas.bonus import (
     PrivilegeHistoryCreate,
     PrivilegeHistoryFilter,
     PrivilegeCreate,
