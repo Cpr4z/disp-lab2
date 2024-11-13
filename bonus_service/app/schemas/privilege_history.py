@@ -2,7 +2,7 @@ from pydantic import BaseModel
 from datetime import datetime as dt
 from uuid import UUID
 
-from bonus_service.app.enums.status import PrivilegeHistoryStatus
+from enums.status import PrivilegeHistoryStatus
 
 
 class PrivilegeHistoryBase(BaseModel):

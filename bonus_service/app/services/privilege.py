@@ -1,9 +1,9 @@
 from sqlalchemy.orm import Session
 
-from bonus_service.app.models.privilege import PrivilegeModel
-from bonus_service.app.schemas.privilege import PrivilegeCreate, PrivilegeUpdate, PrivilegeFilter
-from bonus_service.app.exceptions.http_exceptions import NotFoundException, ConflictException
-from bonus_service.app.cruds.interfaces.privilege import IPrivilegeCRUD
+from models.privilege import PrivilegeModel
+from schemas.privilege import PrivilegeCreate, PrivilegeUpdate, PrivilegeFilter
+from exceptions.http_exceptions import NotFoundException, ConflictException
+from cruds.interfaces.privilege import IPrivilegeCRUD
 
 
 class PrivilegeService():

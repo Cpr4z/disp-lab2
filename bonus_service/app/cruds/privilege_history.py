@@ -1,8 +1,8 @@
 from sqlalchemy.orm import Query
 
-from bonus_service.app.models.privilege_history import PrivilegeHistoryModel
+from models.privilege_history import PrivilegeHistoryModel
 from interfaces.privilege_history import IPrivilegeHistoryCRUD
-from bonus_service.app.schemas.privilege_history import PrivilegeHistoryFilter
+from schemas.privilege_history import PrivilegeHistoryFilter
 
 
 class PrivilegeHistoryCRUD(IPrivilegeHistoryCRUD):

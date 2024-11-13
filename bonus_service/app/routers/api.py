@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 
-from bonus_service.app.routers import privilege, privilege_history, manage
+from routers import privilege, privilege_history, manage
 
 
 router = APIRouter()

@@ -1,6 +1,6 @@
 from enum import Enum
 
-from bonus_service.app.schemas.response import ErrorResponse, ValidationErrorResponse
+from schemas.response import ErrorResponse, ValidationErrorResponse
 
 class RespPrivilegeEnum(Enum):
     GetAll = {

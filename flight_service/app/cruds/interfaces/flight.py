@@ -1,8 +1,8 @@
 from sqlalchemy.orm import Session
 from abc import ABC, abstractmethod
 
-from flight_service.app.models.flight import FlightModel
-from flight_service.app.schemas.flight import FlightFilter
+from models.flight import FlightModel
+from schemas.flight import FlightFilter
 
 
 class IFlightCRUD(ABC):

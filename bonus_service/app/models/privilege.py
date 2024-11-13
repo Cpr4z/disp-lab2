@@ -1,6 +1,6 @@
 from sqlalchemy import Column, Integer, String
 
-from bonus_service.app.utils.database import Base
+from utils.database import Base
 
 
 class PrivilegeModel(Base):

@@ -1,6 +1,6 @@
 from sqlalchemy import Column, Integer, String, DateTime, ForeignKey
-from flight_service.app.utils.database import Base
-from flight_service.app.models.airport import AirportModel
+from utils.database import Base
+from models.airport import AirportModel
 
 
 class FlightModel(Base):

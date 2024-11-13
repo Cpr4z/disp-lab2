@@ -1,7 +1,7 @@
 from fastapi import APIRouter, status
 from fastapi.responses import Response
 
-from bonus_service.app.enums.responses import RespManageEnum
+from enums.responses import RespManageEnum
 
 
 router = APIRouter(

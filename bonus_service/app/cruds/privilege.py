@@ -1,8 +1,8 @@
 from sqlalchemy.orm import Query
 
-from bonus_service.app.models.privilege import PrivilegeModel
+from models.privilege import PrivilegeModel
 from interfaces.privilege import IPrivilegeCRUD
-from bonus_service.app.schemas.privilege import PrivilegeUpdate, PrivilegeFilter
+from schemas.privilege import PrivilegeUpdate, PrivilegeFilter
 
 
 class PrivilegeCRUD(IPrivilegeCRUD):

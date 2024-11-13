@@ -2,7 +2,7 @@ from sqlalchemy import Column, Integer, String, ForeignKey, DateTime
 from sqlalchemy.dialects.postgresql import UUID
 from datetime import datetime as dt
 
-from bonus_service.app.utils.database import Base
+from utils.database import Base
 from privilege import PrivilegeModel
 
 

@@ -4,20 +4,16 @@ from sqlalchemy.orm import Session
 from typing import Annotated
 from uuid import UUID
 
-from bonus_service.app.schemas.privilege_history import (
+from schemas.privilege_history import (
     PrivilegeHistoryFilter,
     PrivilegeHistoryCreate,
     PrivilegeHistory
 )
-from bonus_service.app.services.privilege_history import PrivilegeHistoryService
-from bonus_service.app.enums.responses import RespPrivilegeHistoryEnum
-from bonus_service.app.utils.database import get_db
-from bonus_service.app.cruds.interfaces.privilege_history import IPrivilegeHistoryCRUD
-from bonus_service.app.cruds.privilege_history import PrivilegeHistoryCRUD
-
-
-# from cruds.mocks.privilege_history import PrivilegeHistoryMockCRUD
-
+from services.privilege_history import PrivilegeHistoryService
+from enums.responses import RespPrivilegeHistoryEnum
+from utils.database import get_db
+from cruds.interfaces.privilege_history import IPrivilegeHistoryCRUD
+from cruds.privilege_history import PrivilegeHistoryCRUD
 
 def get_privilege_history_crud() -> type[IPrivilegeHistoryCRUD]:
     return PrivilegeHistoryCRUD

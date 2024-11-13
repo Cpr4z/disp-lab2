@@ -1,6 +1,6 @@
 from pydantic import BaseModel, constr, conint
 
-from bonus_service.app.enums.status import PrivilegeStatus
+from enums.status import PrivilegeStatus
 
 
 class PrivilegeBase(BaseModel):

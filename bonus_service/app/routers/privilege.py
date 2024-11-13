@@ -3,22 +3,18 @@ from fastapi.responses import Response
 from sqlalchemy.orm import Session
 from typing import Annotated
 
-from bonus_service.app.schemas.privilege import (
+from schemas.privilege import (
     PrivilegeFilter,
     PrivilegeCreate,
     PrivilegeUpdate,
     Privilege
 )
-from bonus_service.app.services.privilege import PrivilegeService
-from bonus_service.app.enums.responses import RespPrivilegeEnum
-from bonus_service.app.enums.status import PrivilegeStatus
-from bonus_service.app.utils.database import get_db
-from bonus_service.app.cruds.interfaces.privilege import IPrivilegeCRUD
-from bonus_service.app.cruds.privilege import PrivilegeCRUD
-
-
-# from cruds.mocks.privilege import PrivilegeMockCRUD
-
+from services.privilege import PrivilegeService
+from enums.responses import RespPrivilegeEnum
+from enums.status import PrivilegeStatus
+from utils.database import get_db
+from cruds.interfaces.privilege import IPrivilegeCRUD
+from cruds.privilege import PrivilegeCRUD
 
 def get_privilege_crud() -> type[IPrivilegeCRUD]:
     return PrivilegeCRUD
