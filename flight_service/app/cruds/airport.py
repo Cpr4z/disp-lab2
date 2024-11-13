@@ -1,5 +1,5 @@
 from models.airport import AirportModel
-from interfaces.airport import IAirportCRUD
+from cruds.interfaces.airport import IAirportCRUD
 
 
 class AirportCRUD(IAirportCRUD):

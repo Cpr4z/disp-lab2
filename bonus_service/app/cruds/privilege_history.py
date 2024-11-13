@@ -1,7 +1,7 @@
 from sqlalchemy.orm import Query
 
 from models.privilege_history import PrivilegeHistoryModel
-from interfaces.privilege_history import IPrivilegeHistoryCRUD
+from cruds.interfaces.privilege_history import IPrivilegeHistoryCRUD
 from schemas.privilege_history import PrivilegeHistoryFilter
 
 

@@ -1,7 +1,7 @@
 from sqlalchemy.orm import Query
 
 from models.privilege import PrivilegeModel
-from interfaces.privilege import IPrivilegeCRUD
+from cruds.interfaces.privilege import IPrivilegeCRUD
 from schemas.privilege import PrivilegeUpdate, PrivilegeFilter
 
 

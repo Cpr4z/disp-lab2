@@ -1,5 +1,5 @@
 from models.flight import FlightModel
-from interfaces.flight import IFlightCRUD
+from cruds.interfaces.flight import IFlightCRUD
 from schemas.flight import FlightFilter
 
 
