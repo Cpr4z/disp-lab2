@@ -10,7 +10,7 @@ from schemas.flight import (
     PaginationResponse,
     FlightResponse
 )
-from gateway_service.app.schemas.bonus import (
+from schemas.bonus import (
     PrivilegeShortInfo,
     PrivilegeInfoResponse,
     BalanceHistory,
@@ -19,7 +19,7 @@ from gateway_service.app.schemas.bonus import (
     PrivilegeHistoryCreate,
     PrivilegeHistoryFilter
 )
-from gateway_service.app.schemas.ticket import (
+from schemas.ticket import (
     TicketResponse,
     TicketCreate,
     TicketUpdate,
