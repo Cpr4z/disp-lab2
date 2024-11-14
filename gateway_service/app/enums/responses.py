@@ -43,3 +43,12 @@ class RespEnum(Enum):
         "model": ValidationErrorResponse,
         "description": "Ошибка валидации данных",
     }
+
+    Health = {
+        "description": "Ticket server is ready to work",
+        "content": {
+            "application/octet-stream": {
+                "example": ""
+            }
+        },
+    }

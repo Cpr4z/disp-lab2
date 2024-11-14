@@ -6,4 +6,6 @@ from routers import flight, airport, manage
 router = APIRouter()
 router.include_router(flight.router)
 router.include_router(airport.router)
-router.include_router(manage.router)
+
+health_router = APIRouter()
+health_router.include_router(manage.router)

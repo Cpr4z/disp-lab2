@@ -3,7 +3,7 @@ from fastapi import FastAPI, HTTPException
 from fastapi.exceptions import RequestValidationError
 from fastapi.openapi.utils import get_openapi
 
-from routers.api import router as api_router
+from routers.api import router as api_router, health_router as manage_router
 from utils.settings import get_settings
 from exceptions.handlers import (
     http_exception_handler,
@@ -42,6 +42,8 @@ app = FastAPI(
     version="v1",
 )
 app.include_router(api_router, prefix="/api/v1")
+app.include_router(manage_router)
+
 app.openapi = custom_openapi
 
 

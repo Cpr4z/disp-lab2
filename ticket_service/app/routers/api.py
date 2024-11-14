@@ -5,4 +5,6 @@ from routers import ticket, manage
 
 router = APIRouter()
 router.include_router(ticket.router)
-router.include_router(manage.router)
+
+health_router = APIRouter()
+health_router.include_router(manage.router)
